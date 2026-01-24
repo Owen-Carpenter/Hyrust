@@ -1,0 +1,8 @@
+{
+  "components": {
+    "WarpZoneComponent": {
+      "radius": 3,
+      "zoneType": "WARP_SAFE"
+    }
+  }
+}

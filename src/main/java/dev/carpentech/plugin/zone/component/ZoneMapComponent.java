@@ -1,22 +1,20 @@
-package dev.carpentech.plugin.zones.component;
-
-import dev.carpentech.plugin.zones.data.ZoneType;
+package dev.carpentech.plugin.zone.component;
 
 import java.util.HashMap;
 import java.util.Map;
+import dev.carpentech.plugin.zone.data.ZoneType;
 
 public class ZoneMapComponent {
 
-    // Key = chunkX << 32 | chunkZ
-    public final Map<Long, ZoneType> zones = new HashMap<>();
+    private final Map<Long, ZoneType> zones = new HashMap<>();
 
-    public void set(int chunkX, int chunkZ, ZoneType type) {
-        long key = (((long) chunkX) << 32) | (chunkZ & 0xffffffffL);
+    public void set(int cx, int cz, ZoneType type) {
+        long key = (((long) cx) << 32) | (cz & 0xffffffffL);
         zones.put(key, type);
     }
 
-    public ZoneType get(int chunkX, int chunkZ) {
-        long key = (((long) chunkX) << 32) | (chunkZ & 0xffffffffL);
+    public ZoneType get(int cx, int cz) {
+        long key = (((long) cx) << 32) | (cz & 0xffffffffL);
         return zones.getOrDefault(key, ZoneType.WILDERNESS);
     }
 }

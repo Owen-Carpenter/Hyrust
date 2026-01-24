@@ -1,0 +1,44 @@
+{
+  "warps": [
+    {
+      "name": "spawn",
+      "x": 0,
+      "y": 100,
+      "z": 0,
+      "radiusChunks": 6,
+      "description": "Main spawn point"
+    },
+    {
+      "name": "market",
+      "x": 500,
+      "y": 100,
+      "z": 500,
+      "radiusChunks": 3,
+      "description": "Trading marketplace"
+    },
+    {
+      "name": "arena",
+      "x": -500,
+      "y": 100,
+      "z": -500,
+      "radiusChunks": 3,
+      "description": "PvP arena"
+    },
+    {
+      "name": "mine",
+      "x": 1000,
+      "y": 50,
+      "z": 0,
+      "radiusChunks": 3,
+      "description": "Mining area"
+    },
+    {
+      "name": "farm",
+      "x": -1000,
+      "y": 100,
+      "z": 1000,
+      "radiusChunks": 3,
+      "description": "Farming area"
+    }
+  ]
+}

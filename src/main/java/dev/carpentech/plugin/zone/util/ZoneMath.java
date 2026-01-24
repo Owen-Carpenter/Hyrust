@@ -1,4 +1,4 @@
-package dev.carpentech.plugin.zones.util;
+package dev.carpentech.plugin.zone.util;
 
 public class ZoneMath {
 
