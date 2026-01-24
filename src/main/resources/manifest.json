@@ -1,0 +1,6 @@
+{
+  "Group": "dev.carpentech",
+  "Name": "Hyrust",
+  "Version": "1.0.0",
+  "Main": "dev.carpentech.plugin.Factions"
+}
